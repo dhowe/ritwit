@@ -1,3 +1,8 @@
+node_modules
+riinsta.js
+misc
+tmp
+
 # Logs
 logs
 *.log
