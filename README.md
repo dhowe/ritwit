@@ -8,7 +8,7 @@ A simple twitter client for js
 npm install ritwit
 ```
 
-To use this package you will need to create a developer account on Twitter and get the (4) keys will you need, as shown below.
+To use this package you will need to create a developer account on Twitter and obtain (4) keys for your config object, as shown below.
 
 
 ## Usage:
