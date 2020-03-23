@@ -2,7 +2,7 @@
   "name": "ritwit",
   "version": "1.0.9",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "mocha",
     "pub": "np --no-2fa patch"
