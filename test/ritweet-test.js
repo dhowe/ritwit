@@ -1,4 +1,4 @@
-const RiTweet = require('../ritweet');
+const RiTweet = require('../main');
 const expect = require('chai').expect;
 
 describe('RiTweet', () => {
