@@ -7,7 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
     "patch": "np --no-2fa patch"
   },
   "repository": {
