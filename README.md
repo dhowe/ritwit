@@ -2,7 +2,7 @@
 
 A simple twitter client for js
 
-# Installing
+## Installing
 
 ```shell
 npm install ritwit
