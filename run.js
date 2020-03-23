@@ -1,5 +1,5 @@
 let conf = require('./config');
-let RiTweet = require('./ritweet');
+let RiTweet = require('./index');
 
 let rt = new RiTweet(conf);
 
