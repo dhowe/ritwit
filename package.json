@@ -3,12 +3,9 @@
   "version": "1.0.5",
   "description": "",
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "test": "mocha",
-    "patch": "np --no-2fa patch"
+    "pub": "np --no-2fa patch"
   },
   "repository": {
     "type": "git",
