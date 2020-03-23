@@ -1,9 +1,9 @@
 let conf = require('./config');
-let RiTweet = require('./main');
+let RiTwit = require('./main');
 
-let rt = new RiTweet(conf);
+let rt = new RiTwit(conf);
 
-rt.tweet('1 mushroom is really coming');
+0 && rt.tweet('1 mushroom is really coming');
 0 && rt.tweetImage('img/mushroom.jpg', 'mushrooms');
 0 && rt.tweetTextOverImage('img/mushroom.jpg', 'Humanity', {
  font: '80px Futura', opacity: 0.8, yOffset: 60

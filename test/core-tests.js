@@ -1,13 +1,13 @@
-const RiTweet = require('../main');
+const RiTwit = require('../main');
 const expect = require('chai').expect;
 
-describe('RiTweet', () => {
+describe('RiTwit', () => {
         it('Should throw without a valid config ', () => {
-        expect(() => new RiTweet()).to.throw();
-        expect(() => new RiTweet({})).to.throw();
+        expect(() => new RiTwit()).to.throw();
+        expect(() => new RiTwit({})).to.throw();
     });
-    it('Should correctly construct a RiTweet object', () => {
-        expect(new RiTweet({
+    it('Should correctly construct a RiTwit object', () => {
+        expect(new RiTwit({
             consumer_key: 'xxx',
             consumer_secret: 'xxx',
             access_token: 'xxx',

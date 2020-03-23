@@ -5,7 +5,7 @@ let text2png = require('text2png');
 let mergeImages = require('merge-images');
 let { Canvas, Image } = require('canvas');
 
-class RiTweet {
+class RiTwit {
 
   constructor(config = {}) {
     if (!config.access_token || !config.consumer_key) {
@@ -142,4 +142,4 @@ class RiTweet {
   }
 }
 
-module.exports = RiTweet;
+module.exports = RiTwit;

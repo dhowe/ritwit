@@ -1,21 +1,22 @@
-# RiTweet
+# RiTwit
 
 A simple twitter client for js
 
 # Installing
 
-First create a developer account on twitter and get the four keys will you need below.
-
 ```shell
 npm install ritweet
 ```
 
+To use this package you will need to create a developer account on Twitter and get the (4) keys will you need, as shown below.
+
+
 ## Usage:
 
 ```javascript
-let RiTweet = require('ritweet');
+let RiTwit = require('ritwit');
 
-let rt = new RiTweet({
+let rt = new RiTwit({
   consumer_key:         '...',
   consumer_secret:      '...',
   access_token:         '...',
