@@ -1,6 +1,6 @@
 {
-  "name": "ritweet",
-  "version": "1.0.7",
+  "name": "ritwit",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
