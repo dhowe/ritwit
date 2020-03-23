@@ -7,13 +7,13 @@ A simple twitter client for js
 First create a developer account on twitter and get the four keys will you need below.
 
 ```shell
-npm install ritwit
+npm install ritweet
 ```
 
 ## Usage:
 
 ```javascript
-let RiTweet = require('RiTweet');
+let RiTweet = require('ritweet');
 
 let rt = new RiTweet({
   consumer_key:         '...',
