@@ -1,7 +1,7 @@
 let conf = require('./config');
-let Tweeter = require('./tweeter');
+let RiTweet = require('./ritweet');
 
-let rt = new Tweeter(conf);
+let rt = new RiTweet(conf);
 
 rt.tweet('1 mushroom is really coming');
 0 && rt.tweetImage('img/mushroom.jpg', 'mushrooms');

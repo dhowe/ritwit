@@ -1,21 +1,21 @@
 {
-  "name": "tweeter-js",
+  "name": "ritweet",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhowe/tweeter-js.git"
+    "url": "git+https://github.com/dhowe/ritweet.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dhowe/tweeter-js/issues"
+    "url": "https://github.com/dhowe/ritweet/issues"
   },
-  "homepage": "https://github.com/dhowe/tweeter-js#readme",
+  "homepage": "https://github.com/dhowe/ritweet#readme",
   "dependencies": {
     "canvas": "^2.6.1",
     "image-size": "^0.8.3",
