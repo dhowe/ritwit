@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhowe/ritweet.git"
+    "url": "git+https://github.com/dhowe/ritwit.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dhowe/ritweet/issues"
+    "url": "https://github.com/dhowe/ritwit/issues"
   },
-  "homepage": "https://github.com/dhowe/ritweet#readme",
+  "homepage": "https://github.com/dhowe/ritwit#readme",
   "dependencies": {
     "canvas": "^2.6.1",
     "image-size": "^0.8.3",
