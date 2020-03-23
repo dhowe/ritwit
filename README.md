@@ -5,7 +5,7 @@ A simple twitter client for js
 # Installing
 
 ```shell
-npm install ritweet
+npm install ritwit
 ```
 
 To use this package you will need to create a developer account on Twitter and get the (4) keys will you need, as shown below.
@@ -75,7 +75,6 @@ rt.userById('1241263348529807361', function (err, user) {
 rt.userByName('utensilbot', function (err, user) {
     console.log(user);
 });
-
 
 
 
