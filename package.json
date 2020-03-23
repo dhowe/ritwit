@@ -22,5 +22,9 @@
     "merge-images": "^2.0.0",
     "text2png": "^2.3.0",
     "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
   }
 }
