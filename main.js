@@ -5,6 +5,9 @@ let text2png = require('text2png');
 let mergeImages = require('merge-images');
 let { Canvas, Image } = require('canvas');
 
+// np-version: yarn add - D https://github.com/pixelastic/np/tarball/c3ab2e3b053c7da0ce40a572ca1616273ac080f8
+// before publishing, do $ yarn login
+
 class RiTwit {
 
   constructor(config = {}) {
