@@ -2,7 +2,7 @@
 
 A simple twitter client for node.js
 
-# Installing
+## Installing
 
 ```shell
 npm install ritwit
@@ -11,7 +11,7 @@ npm install ritwit
 To use this package you will need to create a developer account on Twitter and obtain (4) keys for your config object, as shown below.
 
 
-## Usage:
+## Usage
 
 ```javascript
 let RiTwit = require('ritwit');
