@@ -9,7 +9,7 @@ class RiTwit {
 
   constructor(config = {}) {
     if (!config.access_token || !config.consumer_key) {
-      throw Error('Invalid config options:',config);
+      throw Error('Invalid config options:', config);
     }
     this.T = new twit(config);
     this.tmp = config.tempdir || '/tmp';
@@ -53,7 +53,6 @@ class RiTwit {
       track 	optional 	Keywords to track. Phrases of keywords are specified by a comma-separated list. See track for more information.
       follow 	optional 	A comma separated list of user IDs, indicating the users to return statuses for in the stream. See follow for more information.
       locations 	optional 	Specifies a set of bounding boxes to track. See locations for more information.
-      delimited 	optional 	Specifies whether messages should be length-delimited. See delimited for more information.
   */
   onTweetMatching(filter, todo) {
     if (!filter) throw Error('filter required');
@@ -70,7 +69,6 @@ class RiTwit {
       track 	optional 	Keywords to track. Phrases of keywords are specified by a comma-separated list. See track for more information.
       follow 	optional 	A comma separated list of user IDs, indicating the users to return statuses for in the stream. See follow for more information.
       locations 	optional 	Specifies a set of bounding boxes to track. See locations for more information.
-      delimited 	optional 	Specifies whether messages should be length-delimited. See delimited for more information.
   */
   onDeleteMatching(filter, todo) {
     if (!filter) throw Error('filter required');

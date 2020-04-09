@@ -1,6 +1,6 @@
 # RiTwit
 
-A simple twitter client for js
+A simple twitter client for node.js
 
 # Installing
 
@@ -26,55 +26,67 @@ let rt = new RiTwit({
 
 
 //
-//  tweet 'hello world'
+//  Tweet 'hello world'
 //
 rt.tweet('hello world');
 
 //
-//  tweet 'hello world' with callback
-//  note: all functions take optional callbacks as below
+//  Tweet 'hello world' with callback
+//  Note: all functions take optional callbacks as below
 //
-rt.tweet('hello world', function (err, data, response) {
+rt.tweet('hello world', function (err, data) {
   console.log('done')
 });
 
 //
-//  tweet an image
+//  Tweet an image
 //
 rt.tweetImage('img/mushroom.jpg');
 
 //
-//  tweet an image plus text
+//  Tweet an image plus text
 //
 rt.tweetImage('img/mushroom.jpg', 'mushrooms');
 
 //
-// tweet text overlayed on an image
-//
-rt.tweetTextOverImage('img/mushroom.jpg', 'Humanity', {
-    font: '80px Futura', opacity: 0.8, yOffset: 60
-});
-
-//
-// get a stream of tweets matching a query
+// Get a stream of tweets matching one or more keywords (comma-delimited)
 //
 rt.onTweetMatching('Climate', function(tweet) {
     console.log(tweet);
 });
 
 //
-//  find a user by id
+// Get a stream of tweets matching one or more user-ids (comma-delimited)
+//
+rt.onTweetMatching({ follow: '1241263348529807361,2855526444' }, function(t) {
+    console.log(t);
+})
+
+//
+// Get a stream of tweets for one or more locations (comma-delimited)
+//
+rt.onTweetMatching({ locations: '-74,40,-73,41' }, function (tweet) {
+    console.log(tweet);          // new york
+})
+
+//
+//  Find a user by Twitter id
 //
 rt.userById('1241263348529807361', function (err, user) {
     console.log(user);
 });
 
 //
-//  find a user by screen-name
+//  Find a user by screen-name
 //
 rt.userByName('utensilbot', function (err, user) {
     console.log(user);
 });
 
-
+//
+// Tweet text overlayed on an image
+//
+rt.tweetTextOverImage('img/mushroom.jpg', 'Humanity', {
+    font: '80px Futura', opacity: 0.8, yOffset: 60
+});
 

@@ -11,3 +11,7 @@ let rt = new RiTwit(conf);
 0 && rt.onTweetMatching('Climate');
 0 && rt.userByName('utensilbot');
 0 && rt.userById('1241263348529807361');
+
+0 && rt.onTweetMatching({ follow: '1241263348529807361' }, function (tweet) {
+  console.log(tweet);
+})
