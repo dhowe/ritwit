@@ -1,6 +1,6 @@
 # RiTwit
 
-A simple twitter client for node.js
+A simple twitter client for node.js built atop [twit](https://www.npmjs.com/package/twit)
 
 ## Installing
 
@@ -35,7 +35,7 @@ rt.tweet('hello world');
 //  Note: all functions take optional callbacks as below
 //
 rt.tweet('hello world', function (err, data) {
-  console.log('done')
+  console.log('done');
 });
 
 //
@@ -60,14 +60,21 @@ rt.onTweetMatching('Climate', function(tweet) {
 //
 rt.onTweetMatching({ follow: '1241263348529807361,2855526444' }, function(t) {
     console.log(t);
-})
+});
 
 //
 // Get a stream of tweets for one or more locations (comma-delimited)
 //
 rt.onTweetMatching({ locations: '-74,40,-73,41' }, function (tweet) {
     console.log(tweet);          // new york
-})
+});
+
+//
+// Get a stream of tweets for a keyword, language and location
+//
+rt.onTweetMatching({ track: 'climate', language: 'en', locations: '-74,40,-73,41' }, function (tweet) {
+   console.log(tweet.text);
+});
 
 //
 //  Find a user by Twitter id
