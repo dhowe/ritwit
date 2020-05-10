@@ -58,8 +58,8 @@ rt.onTweetMatching('Climate', function(tweet) {
 //
 // Get a stream of tweets matching one or more user-ids (comma-delimited)
 //
-rt.onTweetMatching({ follow: '1241263348529807361,2855526444' }, function(t) {
-    console.log(t);
+rt.onTweetMatching({ follow: '1241263348529807361,2855526444' }, function(tweet) {
+    console.log(tweet);
 });
 
 //
@@ -73,7 +73,7 @@ rt.onTweetMatching({ locations: '-74,40,-73,41' }, function (tweet) {
 // Get a stream of tweets for a keyword, language and location
 //
 rt.onTweetMatching({ track: 'climate', language: 'en', locations: '-74,40,-73,41' }, function (tweet) {
-   console.log(tweet.text);
+   console.log(tweet);
 });
 
 //
