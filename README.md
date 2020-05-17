@@ -97,3 +97,10 @@ rt.tweetTextOverImage('img/mushroom.jpg', 'Humanity', {
     font: '80px Futura', opacity: 0.8, yOffset: 60
 });
 
+//
+// Tweet text overlayed on an image, plus text
+//
+rt.tweetTextOverImage('img/mushroom.jpg', 'Humanity', {
+    font: '80px Futura', opacity: 0.8, yOffset: 60, tweetText: 'Check it!'
+});
+
