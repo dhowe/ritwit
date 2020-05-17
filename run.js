@@ -8,6 +8,9 @@ let rt = new RiTwit(conf);
 0 && rt.tweetTextOverImage('img/mushroom.jpg', 'Humanity', {
  font: '80px Futura', opacity: 0.8, yOffset: 60
 });
+1 && rt.tweetTextOverImage('img/mushroom.jpg', 'Humanity', {
+  font: '80px Futura', opacity: 0.8, yOffset: 60, tweetText: 'check it, @danielchowe' 
+});
 0 && rt.onTweetMatching('Climate');
 0 && rt.userByName('utensilbot');
 0 && rt.userById('1241263348529807361');

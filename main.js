@@ -100,6 +100,7 @@ class RiTwit {
   tweetTextOverImage(imgPath, text, opts = {}, cb) {
     opts.textAlign = opts.textAlign || 'center';
     opts.writeFile = opts.writeFile || false;
+    opts.tweetText = opts.tweetText || '';
     let outputImage = this.tmp + '/output.png';
     let textImage = this.tmp + '/' + text + '.png';
     fs.writeFile(textImage, text2png(text, opts), e => {
@@ -118,11 +119,11 @@ class RiTwit {
           if (opts.writeFile) {
             fs.writeFile(outputImage, b64Img, { encoding: 'base64' }, e => {
               if (e) throw e;
-              this.tweetImage(outputImage, '', cb);
+              this.tweetImage(outputImage, opts.tweetText, cb);
             });
           }
           else {
-            this._tweetImageData(b64Img, '', cb);
+            this._tweetImageData(b64Img, opts.tweetText, cb);
           }
         });
     });
