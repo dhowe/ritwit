@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/dhowe/ritwit#readme",
   "dependencies": {
-    "canvas": "^2.6.1",
+    "canvas": "^2.9.0",
     "image-size": "^0.8.3",
     "merge-images": "^2.0.0",
     "text2png": "^2.3.0",
